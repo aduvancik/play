@@ -1,0 +1,55 @@
+body,html {
+  overflow: hidden;
+  max-width: 100%;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  position: relative;
+
+  border: 1px black solid;
+
+  box-shadow:
+  inset 0 -3em 3em rgba(0.4, 0.2, 0.2, 0.3),
+  0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0.2, 0.2, 0.2, 0.5);
+  /* width: 500px; */
+  /* height: 500px; */
+}
+
+.game td {
+  border: 1px black solid;
+}
+
+
+
+.game caption {
+  width: 100%;
+  padding: 5px;
+
+  display:flex;
+  justify-content: space-between;
+
+  position: absolute;
+  top: -30px;
+
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+}
+
+.dagger {
+  background: url(./img/dagger.png);
+}
+
+.zero {
+  background: url(./img/zero.png);
+}
+
+.dagger, .zero {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
